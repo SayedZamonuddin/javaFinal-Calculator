@@ -22,13 +22,7 @@ public class CalculatorController {
     @FXML
     private void btnController(ActionEvent event) throws ScriptException {
         String input = (((Button) event.getSource()).getText());
-        //ScriptEngine engine = manager.getEngineByName("js");
-        if (engine == null) {
-            System.out.println("Error: Could not create ScriptEngine");
-            return;
-        }
-
-        //String input = (((Button) event.getSource()).getText());
+   
 //        displaying the input that contains the following characters
         if ("1234567890+-*/.".contains(input)) screenOutPut += input;
 
